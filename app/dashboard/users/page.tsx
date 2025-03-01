@@ -4,7 +4,7 @@ import Link from "next/link";
 const page = () => {
   return (
     <div>
-      <h1>Dash board user </h1>
+      <h1> users list </h1>
       <ul className="mt-10 space-y-2">
         {["1", "2", "3", "4"].map((id) => (
           <li key={id}>
