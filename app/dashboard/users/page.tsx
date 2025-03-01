@@ -1,18 +1,19 @@
-import React from 'react'
-
+'use client'
+import React from "react";
+import Link from "next/link";
 const page = () => {
   return (
     <div>
-        <h1>Dash board user </h1>
-            <ul className='mt-10'>
-                    <li>user  1</li>
-                    <li>user  2</li>
-                    <li>user  3</li>
-                    <li>user  4</li>
-            </ul>
-       
+      <h1>Dash board user </h1>
+      <ul className="mt-10 space-y-2">
+        {["1", "2", "3", "4"].map((id) => (
+          <li key={id}>
+            <Link href={`/dashboard/users/${id}`}>User {id}</Link>
+          </li>
+        ))}
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
