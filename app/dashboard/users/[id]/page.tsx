@@ -10,6 +10,7 @@ const page =  async ({params}:Props) => {
     //console.log(params);
     //const {id} = params;
     const { id } = await Promise.resolve(params); // Ensure params is fully resolved
+    console.log("params:",params);
   return (
     <div>User Profile Page: {id}</div>
   )
