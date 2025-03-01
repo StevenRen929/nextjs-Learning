@@ -4,6 +4,6 @@ import React from 'react'
 
 export default function Hello() {
   return (
-    <div>Hello</div>
+    <div>Hello this is nextjs learning</div>
   )
 }
